@@ -2,7 +2,8 @@
 const supabaseUrl = "https://njnymvxiestqsyfyicyq.supabase.co";
 const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5qbnltdnhpZXN0cXN5ZnlpY3lxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODEwOTc5MTUsImV4cCI6MjA5NjY3MzkxNX0.3giNHgMSSroVZc2D68mMn2jDnpbGuisMN-0ghMOXOu0";
 
-const supabase = window.supabase.createClient(supabaseUrl, supabaseKey);
+const client = window.supabase.createClient(supabaseUrl, supabaseKey);
+
 
 // SUBMIT FEEDBACK
 async function submitFeedback() {
